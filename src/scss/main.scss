@@ -1,82 +1,86 @@
-// This is where you can import other stylesheets or write your scss code
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+ // This is where you can import other stylesheets or write your scss code
+ // @import "../../node_modules/bootstrap/scss/bootstrap";
 
-* {
-  box-sizing: border-box;
-}
+ * {
+   box-sizing: border-box;
+ }
 
-body,
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
+ body,
+ html {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+ }
 
-.cont {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgb(16, 17, 17);
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: scroll;
-  .video-thumb {
-    width: 300px;
-    margin: 10px;
+ .cont {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: rgb(16, 17, 17);
+   z-index: 1;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   overflow: scroll;
 
-    .img-cont {
-      width: 100%;
-      height: 200px;
+   .video-thumb {
+     width: 300px;
+     margin: 10px;
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    p {
-      color: #fff;
-      font-family: monospace;
-    }
-  }
-}
+     .img-cont {
+       width: 100%;
+       height: 200px;
 
-.player {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: tomato;
-  z-index: 2;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-  .close {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5em;
-    color: #fff;
-  }
+       img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+       }
+     }
 
-  .video-container {
-    position: relative;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    video {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
+     p {
+       color: #fff;
+       font-family: monospace;
+     }
+   }
+ }
 
-.active {
-  transform: translateY(0%);
-}
+ .player {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: tomato;
+   z-index: 2;
+   transform: translateY(-100%);
+   transition: transform 0.3s;
+
+   .close {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     font-size: 1.5em;
+     color: #fff;
+   }
+
+   .video-container {
+     position: relative;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+
+     video {
+       width: 100%;
+       height: 100%;
+     }
+   }
+ }
+
+ .active {
+   transform: translateY(0%);
+ }
